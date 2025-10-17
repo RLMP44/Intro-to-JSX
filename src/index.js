@@ -1,5 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDom from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<h1>Hello World!</h1>);
+const root = ReactDom.createRoot(document.getElementById("root"));
+const html = (
+  <div>
+    <h1>Favorite Foods</h1>
+    <ul>
+      <li>Sushi</li>
+      <li>Katsudon</li>
+      <li>Olives</li>
+    </ul>
+  </div>
+);
+// can only render a single html element
+root.render(html);
