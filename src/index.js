@@ -2,13 +2,15 @@ import React from "react";
 import ReactDom from "react-dom/client";
 
 const root = ReactDom.createRoot(document.getElementById("root"));
+const name = "Rachael";
+const favFoods = ["Sushi", "Katsudon", "Olives"];
 const html = (
   <div>
-    <h1>Favorite Foods</h1>
+    <h1>{name}'s Favorite Foods</h1>
     <ul>
-      <li>Sushi</li>
-      <li>Katsudon</li>
-      <li>Olives</li>
+      {favFoods.map((food) => (
+        <li>{food}</li>
+      ))}
     </ul>
   </div>
 );
