@@ -1,4 +1,5 @@
 import("./index2");
+import("./index3");
 
 // import React from "react";
 // import ReactDom from "react-dom/client";
